@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  max-width: 935px;
+  height: 100vh;
+  margin: auto;
+}
+
+.col-smartphone {
+  display: flex;
+  justify-content: flex-end;
+  width: 48%;
+  margin-right: 80px;
+}
+
+.col-smartphone img {
+  width: 65%;
+  align-self: center;
+}
+
+.col-form {
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+  margin: 50px 0;
+  padding-right: 55px;
+}
+
+.box-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 3;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+
+.img-instagram {
+  width: 45%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.form input {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.form input::placeholder {
+  color: #9c8e8e;
+}
+
+.login-button {
+  border: none;
+  background-color: #b2dffc;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.box-no-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+}
+
+.box-no-account span {
+  color: #0095f6;
+}
+
+.blue-color {
+  color: #38518d;
+}
+
+.box-download {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.download {
+  display: flex;
+}
+
+.download-button {
+  width: 153px;
+  height: 45px;
+  background-size: cover;
+}
+
+.download-button:nth-child(1) {
+  background-image: url("./img/app_store.png");
+}
+
+.download-button:nth-child(2) {
+  background-image: url("./img/play_store.png");
+}
+
+@media (max-width: 767px) {
+  .col-smartphone {
+    display: none;
+  }
+
+  .col-form {
+    width: 55%;
+    margin: 40px auto;
+  }
+}
